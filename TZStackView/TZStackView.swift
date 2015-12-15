@@ -426,10 +426,22 @@ public class TZStackView: UIView {
             }
             switch axis {
             case .Horizontal:
-                let multiplier = arrangedSubview.intrinsicContentSize().width / totalSize
+                let arrangedSubviewWidth = arrangedSubview.intrinsicContentSize().width
+                let multiplier: CGFloat
+                if arrangedSubviewWidth == totalSize {
+                    multiplier = 1
+                } else {
+                    multiplier = arrangedSubviewWidth / totalSize
+                }
                 constraints.append(constraint(item: arrangedSubview, attribute: .Width, toItem: self, multiplier: multiplier, priority: priority))
             case .Vertical:
-                let multiplier = arrangedSubview.intrinsicContentSize().height / totalSize
+                let arrangedSubviewHeight = arrangedSubview.intrinsicContentSize().height
+                let multiplier: CGFloat
+                if arrangedSubviewHeight == totalSize {
+                    multiplier = 1
+                } else {
+                    multiplier = arrangedSubviewHeight / totalSize
+                }
                 constraints.append(constraint(item: arrangedSubview, attribute: .Height, toItem: self, multiplier: multiplier, priority: priority))
             }
         }
