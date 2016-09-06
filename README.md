@@ -14,22 +14,22 @@ So this implementation does **not** support Storyboard. It is meant for iOS deve
 ## Setup
 You basically have two options to include the `TZStackView` in your *Xcode* project:
 
-### Use [Cocoapods](http://cocoapods.org/)
+### Use [CocoaPods](http://cocoapods.org/)
 Example `Podfile`:
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, "8.0"
 use_frameworks!
 
-pod "TZStackView", "1.1.3"
+pod "TZStackView", "1.2.0"
 ```
-Unfortunately, using Cocoapods with a Swift pod requires iOS 8.
+Unfortunately, using CocoaPods with a Swift pod requires iOS 8.
 
 ### Use [Carthage](https://github.com/Carthage/Carthage)
 
 Example `Cartfile`:
 ```
-github "tomvanzummeren/TZStackView" ~> 1.1
+github "tomvanzummeren/TZStackView" ~> 1.2.0
 ```
 
 Run `carthage` to build the framework and drag the built `TZStackView.framework` into your Xcode project.
