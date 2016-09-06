@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name        = "TZStackView"
   s.version     = "1.2.1"
-  s.summary     = "TZStackView is a replica of iOS 9's new UIStackView for use in iOS 7 and iOS 8"
+  s.summary     = "TZStackView is a replica of iOS 9's new UIStackView for use in iOS 8"
   s.homepage    = "https://github.com/tomvanzummeren/TZStackView.git"
   s.license     = { :type => "MIT" }
   s.authors     = { "tomvanzummeren" => "tom.van.zummeren@gmail.com" }
