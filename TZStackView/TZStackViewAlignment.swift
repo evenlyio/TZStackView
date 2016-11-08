@@ -12,33 +12,33 @@ import Foundation
     /* Align the leading and trailing edges of vertically stacked items
     or the top and bottom edges of horizontally stacked items tightly to the container.
     */
-    case Fill
+    case fill
     
     /* Align the leading edges of vertically stacked items
     or the top edges of horizontally stacked items tightly to the relevant edge
     of the container
     */
-    case Leading
+    case leading
     public static var Top: TZStackViewAlignment {
         get {
-            return .Leading
+            return .leading
         }
     }
-    case FirstBaseline // Valid for horizontal axis only
+    case firstBaseline // Valid for horizontal axis only
     
     /* Center the items in a vertical stack horizontally
     or the items in a horizontal stack vertically
     */
-    case Center
+    case center
     
     /* Align the trailing edges of vertically stacked items
     or the bottom edges of horizontally stacked items tightly to the relevant
     edge of the container
     */
-    case Trailing
+    case trailing
     public static var Bottom: TZStackViewAlignment { get {
-            return .Trailing
+            return .trailing
         }
     }
-    case LastBaseline // Valid for horizontal axis only
+    case lastBaseline // Valid for horizontal axis only
 }
